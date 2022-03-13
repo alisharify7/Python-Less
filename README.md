@@ -1,2 +1,2 @@
 # python-less
-solve some fun problem in python 
+solve some fun problem sets in python 
