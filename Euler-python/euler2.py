@@ -13,11 +13,9 @@ counter = 0
 seccond_number = 2
 first_number = 1
 next_number = 0
-i = 0
     
-while (first_number <= 4000000):
+while (first_number < 4000000):
     #update counter step
-    i+=1
     
     #get fib number with collect first number and seccond number
     next_number = first_number + seccond_number
