@@ -25,11 +25,10 @@ while (first_number < 4000000):
     seccond_number = next_number
     
     #check if fib number is even or Not!
-    if (zoje(next_number) == True):
+    if (even(next_number) == True):
         counter += next_number
            
   
 #print final resualt           
 print(counter)             
  
-
