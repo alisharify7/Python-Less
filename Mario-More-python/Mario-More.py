@@ -1,13 +1,11 @@
 #implementation of Mario problem set in python
-
-
 print("Height Must between 1 to 8")
 
 #check if user input is not a number
 try:
     #Get input From user
     x = int(input("Enter Height: "))
-except:
+except ValueError:
     print(f"-{x}- is Not a Number!")
     exit()
 
