@@ -1,6 +1,6 @@
 
-#this function check is a number even or not
-#and return true if a number is even
+#This function check is a number even or not
+#And return true if a number is even
 def even(num):
     if num % 2 == 0:
         return True
@@ -8,27 +8,27 @@ def even(num):
         return False
 
 
-#defind variables
+#Defind variables
 counter = 0
 seccond_number = 2
 first_number = 1
 next_number = 0
     
 while (first_number < 4000000):
-    #update counter step
+    #Update counter step
     
-    #get fib number with collect first number and seccond number
+    #Get fib number with collect first number and seccond number
     next_number = first_number + seccond_number
     
-    #assign new number to variable
+    #Assign new number to variable
     first_number = seccond_number
     seccond_number = next_number
     
-    #check if fib number is even or Not!
+    #Check if fib number is even or Not!
     if (even(next_number) == True):
         counter += next_number
            
   
-#print final resualt           
+#Print final resualt           
 print(counter)             
  
