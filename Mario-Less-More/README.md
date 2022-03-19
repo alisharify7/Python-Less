@@ -6,11 +6,12 @@ A = hash {#}
 
 Mario less [output]: 5
 
-        A
-       AA
-      AAA
-     AAAA
-    AAAAA
+
+#        A
+#       AA
+#      AAA
+#     AAAA
+#    AAAAA
 
 ------------------------
 
