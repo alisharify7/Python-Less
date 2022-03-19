@@ -15,8 +15,8 @@ Mario less [output]: 5
 ------------------------
 
 Mario More [output]: 5
-                       A A
-   AA AA
-  AAA AAA
- AAAA AAAA
-AAAAA AAAAA         
+#    A A
+#   AA AA
+#  AAA AAA
+# AAAA AAAA
+#AAAAA AAAAA         
