@@ -7,15 +7,15 @@ A = hash {#}
 Mario less [output]: 5
 
     A
-   AA
-  AAA
- AAAA
-AAAAA
+    AA
+    AAA
+    AAAA
+    AAAAA
 
 ------------------------
 
 Mario More [output]: 5
-    A A
+                    A A
    AA AA
   AAA AAA
  AAAA AAAA
