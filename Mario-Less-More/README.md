@@ -15,12 +15,12 @@ Mario less [output]: 5
 ------------------------
 
 Mario More [output]: 5
-/     A A
+    /     A A
 
-/    AA AA
+  /    AA AA
 
-/   AAA AAA
+  /   AAA AAA
 
-/  AAAA AAAA
+ /  AAAA AAAA
 
 / AAAAA AAAAA         
