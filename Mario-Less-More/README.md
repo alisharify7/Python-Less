@@ -5,7 +5,7 @@
 **A = hash {#}**
 
 
-Mario  less [output]: 5
+Mario-less [output]: 5
 
 
         A
@@ -16,7 +16,7 @@ Mario  less [output]: 5
 
 ------------------------
 
-Mario More [output]: 5
+Mario-More [output]: 5
 
         A A
        AA AA
