@@ -2,7 +2,8 @@
 
 *'Just run program and enter a number between 1 to 8'*
 
-A = hash {#}
+**A = hash {#}**
+
 
 Mario less [output]: 5
 
