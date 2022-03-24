@@ -1,4 +1,4 @@
-solve this question with list data type in python 
+''--solve this question with list data type in python--'' 
 ----------------------------------------------------------------------
 
 معمای ریاضیاتی پیدا کردن رمز گاوصندوق
