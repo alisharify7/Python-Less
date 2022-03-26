@@ -9,8 +9,8 @@ def find_pass(number):
     number = str(number).zfill(5)
 
     # in here we check the rules and if rules ok return true
-    # and with int() type casting we convert string to a number to casting
-    # math on it     
+    # and with int() type casting we convert string to a number 
+    # to can do math on it     
     if ( (int(number[4]) + int(number[2]) == 14) and 
     ( (int(number[1]) * 2 ) - 1  == int(number[0]) ) and 
     ( (int(number[3]) - 1 ) == int(number[1]) ) and 
