@@ -6,4 +6,4 @@ two upward faces is calculated. If the sum is 7 or 11 on the first roll, you win
 “point.” To win, you must continue rolling the dice until you “make your point”
 (i.e., roll that same point value). You lose by rolling a 7 before making your point. 
 
--- in deitel series book
+### From deitel series book
