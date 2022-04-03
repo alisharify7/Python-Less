@@ -5,11 +5,12 @@
 نیمسال دوم 98-97
 هادیان
 
-python example.py <br>
+Run python example.py
+<br>
 prompt: 3
 <br>
-output:
 
+output:
 # @ \n
 # @ @ \n
 # @ @ @ \n
