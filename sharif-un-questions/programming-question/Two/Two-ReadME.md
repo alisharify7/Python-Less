@@ -5,9 +5,9 @@
 نیمسال دوم 98-97
 هادیان
 
-! python example.py 
-! prompt: 3
-
+python example.py <br>
+prompt: 3
+<br>
 output:
 
 # @ \n
