@@ -5,8 +5,8 @@
 نیمسال دوم 98-97
 هادیان
 
--- python example.py 
--- prompt: 3
+! python example.py 
+! prompt: 3
 
 output:
 
