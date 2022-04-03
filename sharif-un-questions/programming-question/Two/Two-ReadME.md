@@ -11,8 +11,6 @@ python example.py
 
 output:
 
-@
-
-@ @
-
-@ @ @
+@ \n
+@ @ \n
+@ @ @ \n
