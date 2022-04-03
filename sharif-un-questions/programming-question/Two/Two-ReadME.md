@@ -6,8 +6,13 @@
 هادیان
 
 python example.py 
+
 -> 3
+
 output:
+
 @
+
 @ @
+
 @ @ @
