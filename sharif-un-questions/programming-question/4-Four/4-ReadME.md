@@ -1,8 +1,7 @@
 
- ![description](4.png "description")
+ ![description](img/4.png"description")
 
 <br>
-
 # مبانی برنامه سازی - پایتون
-**نیمسال دوم 98-97
-هادیان**
+نیمسال دوم 98-97
+هادیان
