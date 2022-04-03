@@ -37,9 +37,9 @@ while (True):
         print("Invalide input :((( ")
         sys.exit(2)
 
-    # create random number between 0 to 2 
+    # create random number between 0 to 2 {0.1.2}
     rand = randint(0,2)
-    # select randomly from options
+    # select randomly from random numbers
     chosen = chance[rand]
     time.sleep(1)
     
@@ -47,7 +47,7 @@ while (True):
     time.sleep(1)
     pick_winner(chosen,user_input)
 
-    # exit mode for exit
+    # exit mode 
     xx = input("Do you wanna Exit or continue: [-Y- For EXIT, -C- For Continue-]: ").upper()
     
     if (xx.upper() in ["YES","Y","YEP"]):
