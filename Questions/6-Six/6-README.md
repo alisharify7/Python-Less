@@ -1,7 +1,4 @@
-You are given all numbers between 1,2,…,n except one. Your task is to find the missing number.
-
-Input
-
-The first input line contains an integer n.
-
-The second line contains n−1 numbers. Each number is distinct and between 1 and n (inclusive).
+ Write a Python program which accepts the radius of a circle from the user and compute the area. Go to the editor
+Sample Output :
+r = 1.1
+Area = 3.8013271108436504

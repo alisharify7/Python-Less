@@ -1,3 +1,16 @@
 import sys
+import math
 
-n = int(input("Enter n: "))
+r = float(input("Enter r: "))
+
+# formula for calculate radius of circle 
+# c = 2pr
+# https://www.wikihow.com/Calculate-the-Radius-of-a-Circle
+
+
+p = math.pi
+
+answer = (r * r) * p
+
+print("Area: ",answer)
+
