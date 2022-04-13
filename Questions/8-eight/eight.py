@@ -17,3 +17,7 @@ elif(tmp >= 65 and tmp <= 90):
 # if tmp between 97 to 122 so user input is number
 elif(tmp >= 97 and tmp <= 122):
     print("Lower case alphabet")        
+
+
+    # ascii table 
+# https://www.asciitable.com/asciifull.gif 
