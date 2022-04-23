@@ -1,42 +1,51 @@
-from random import seed , randrange
+import random
 import sys
+random.seed()
+
+flag = 0
+points = 0
 
 
-def first_round_win(first,second):
-    tmp = first + second
-    if (tmp == 7 or tmp == 11):
-        print("Player Win!")
-        sys.exit(1)
-    elif (tmp in [2, 3, 12]):
-        print("PLAYER lose!:")    
-        sys.exit(1)
+def drop_dice():
+    one = random.randrange(1,7)
+    two = random.randrange(1,7)
+    print(f"Player Got {one} and {two}")
+    print(f"Sum is {one + two}")
+    return (one,two)
 
-    elif (tmp in [10, 9, 8, 6, 5, 4]):
-        points = tmp  
-        print(f"Points is {points}")
 
-##############
+def first_drop():
+    flag = 1
+    dice = drop_dice()
+    # unpack tuple
+    one,two = dice
+
+    if (one + two in [7,11]):
+        print("Player Win in First Round!")
+        return True
+    elif(one+two in [12,3,2]):
+        print("Player Lose! in First Round!")
+        return False
+    elif(one+two in [10,9,8,6,5,4]):
+        points = one+two 
+        print(f"POINTS is {points}")
+        return True   
+
 
 def main():
-    seed()
-    points = 0
-    first_round = 0
+    if (flag == 0):
+        first_drop()
+    
+    while True:
+        a = drop_dice()
+        one , two = a
 
-    while (True):
-        first = randrange(1,7)
-        second = randrange(1,7)
-        total = first + second
-        print(f"Player Rolled {first} + {second} = {total}")
-
-        if (first_round == 0):
-            first_round_win(first,second)
-        first_round = 1
-
-        if (total == 7):
-            print("Player Lose Sum is 7 ")
+        if (one + two == 7):
+            print(f"Player Lose")
             sys.exit(1)
-        elif (total == points):
-            print("you win! total and points equal")
+        elif (one+two == points):
+            print("Player win! Points and Dice are same")
+            sys.exit(0)
 
 
-main()
+main()    
