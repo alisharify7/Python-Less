@@ -1,0 +1,35 @@
+
+
+.box{
+    text-align:center;
+    max-width:1080px;
+    margin: 0 auto;
+    padding:10px;
+}
+
+
+
+
+
+.form{
+    margin-top: 30px;
+}
+.butt{
+    margin-top:10px;
+
+}
+
+
+
+.box{
+    margin-top:15px;
+    background:#97C4B8 ;
+}
+
+.box h4{
+    margin-top: 20px;
+}
+
+body{
+    background:#6A67CE;
+}

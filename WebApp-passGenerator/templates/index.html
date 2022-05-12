@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<div class="container">
+    <div class="box">
+      <div class="alert alert-primary" role="alert">
+          <h1>Password Generator</h1>
+        </div>
+      <h3>
+        For Generated a password Enter Length of password you want in box
+      </h3>
+
+      <!-- Form to send information -->
+      <div class="form">
+        <form action="/" method="post">
+          <input name="password" type="text" class="form-control" placeholder="Enter password length">
+          <input type="submit" class="btn btn-primary">
+        </form>
+      </div>
+      <!-- end form -->
+  
+          <h2 >PassGenerated: {{ password }}</h2>
+        
+          <h4>
+              <span class="badge badge-danger">Attention</span>            :
+             <span class="badge badge-success">length of password should between
+                 <u>8</u> to <u>180</u>
+                 characters
+             </span>
+          </h4>
+
+    </div>
+  </div>
+{% endblock %}
