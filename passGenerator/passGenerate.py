@@ -59,7 +59,7 @@ def main():
             user = input("\nEnter length on pass you want:\ninput must between 8 to 180\n==> ")
             if (user.upper() == 'Q'):
                 sys.exit(0)
-            if int(user) < 6 or int(user) >180:
+            if int(user) < 8 or int(user) >180:
                 continue
             length = int(user)
         except (ValueError):
