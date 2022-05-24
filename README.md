@@ -22,3 +22,9 @@ ___
 
 > 4.<a href='./Pass-cracker' >Password Cracker Math</a>
   >> A app for Crack a password 
+___
+
+> 5.<a> Mystery Roll Dice Game</a>
+  >> a Mystery Roll-Dice-Game Game With Different Rule To play
+
+___
