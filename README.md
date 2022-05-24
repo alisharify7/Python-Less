@@ -2,7 +2,7 @@
 ##  solve some simple and fun problem sets in python
 
 
-> <a href="./Guess-game">
+> 1.<a href="./Guess-game">
 Guess-Game 
 </a> 
 >> How it Work: Think About a Number betweeb 1 to 1000  in Your Head Then Run Program
