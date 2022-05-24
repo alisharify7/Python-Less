@@ -9,5 +9,5 @@
   >> Purpose of this app is Guessed Your Number In Less Step it can
 ___
 
-> Rock Paper Scissors
+> <a href="./Rock-paper-Scissors"> Rock Paper Scissors </a>
   >> a Simulation of Rock paper Scissors Game
