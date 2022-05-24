@@ -11,3 +11,10 @@ ___
 
 > 2.<a href="./Rock-paper-Scissors"> Rock Paper Scissors </a>
   >> a Simulation of Rock paper Scissors Game
+
+___
+
+> 3.<a> Pass Word Generator </a>
+  >> a app For Generating Strong Password For You
+
+___
