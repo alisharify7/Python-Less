@@ -24,7 +24,7 @@ ___
   >> A app for Crack a password 
 ___
 
-> 5.<a> Mystery Roll Dice Game</a>
+> 5.<a href='./Roll-Dice-Game' > Mystery Roll Dice Game</a>
   >> a Mystery Roll-Dice-Game Game With Different Rule To play
 
 ___
