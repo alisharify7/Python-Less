@@ -2,4 +2,8 @@
 -------------------------------------------
 ## using Random Library and time and sys to implementation
 
+___
 
+## Requirement Library's:
+      pip install colorama
+      conda install -c anaconda colorama
