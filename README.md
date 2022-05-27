@@ -1,4 +1,9 @@
-# python-Less
+- How clone repository:
+
+        Git clone https://github.com/alisharifyy/Python-Less.git
+
+
+# Python-Less
 ## Solve Some Fun Peoblem Set in Here With Python
 
 
