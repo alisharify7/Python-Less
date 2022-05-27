@@ -1,6 +1,6 @@
 # a Web Application With Flask python for Generate custom Password
 
-## How To Run it:
+## How To Run :
 - windows:
 
         py -3 -m venv venv  
@@ -12,14 +12,24 @@
         . venv\bin\activate
 
 
-Then Install requirements Library's:
+## Then Install requirements Library's:
         
         pip install -r requirements.txt 
 
+___
 
-Then Just type: 
-
+## How Run Local Host : 
+ 
+ - Windows :        
+        
+        set FLASK_ENV=development
         flask run
+
+- Linux Or Mac:
+
+        export FLASK_ENV=development
+        flask run
+
 
 
 
