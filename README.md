@@ -22,7 +22,7 @@ ___
 > 3.<a href="PassWord-Generator" > PassWord Generator </a> [Cli Version]
   >> a app For Generating Strong Password For You
   
-   [Web app Version] : <a href='[./Web-PassWord-Gn](https://github.com/alisharifyy/Flask-apps/tree/main/Web-PassWord-Gn)'>CLICK!</a>
+   [Web app Version] : <a href='https://github.com/alisharifyy/Flask-apps/tree/main/Web-PassWord-Gn'>CLICK!</a>
 ___
 
 > 4.<a href='./Pass-cracker' >Password Cracker Math</a>
