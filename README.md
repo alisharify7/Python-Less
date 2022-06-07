@@ -13,11 +13,9 @@
   >> Then answer it
   >> Purpose of this app is Guessed Your Number In Less Step it can
 ___
->2.<a href="./Guess-game"> Guess-Game </a> 
-
-
-
-
+> 2.<a href="./File_Manager"> File-Manager </a> 
+  >> bruh bruh bru
+  
 ___
 > 3.<a href="./Rock-paper-Scissors"> Rock Paper Scissors </a>
   >> a Simulation of Rock paper Scissors Game
