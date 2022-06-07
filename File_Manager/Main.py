@@ -32,14 +32,12 @@ for i in ext_file:
         folder_name.append(f"{i}_files")
         # create folder
         os.mkdir(f"{i}_files")
-        print(f"Now creating this folder = {i}")
         # set status of folder created to 1
         created_folder[i] = 1
 
 # move files to each folder
 for each in list_dir:
     temp = each.split(".")
-    print(temp)
     # if file is create while program run or 
     # create not folder to file name skip it 
     if temp[1] not in ext_file:
