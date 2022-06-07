@@ -13,7 +13,7 @@ for i in list_dir:
     # check is file or dir
     if os.path.isfile(i):
         # if equal to script name skip
-        if i == 'temp.py':
+        if i == 'Main.py' or i == "File Magager.exe":
             continue
         # # split file name to catch extension name
         false_temp , temp = i.split('.')
@@ -21,6 +21,8 @@ for i in list_dir:
         ext_file.append(temp)
         # set folder status to 0
         created_folder[temp] = 0
+    else:
+        list_dir.remove(i)
 
 # create folder for each type 
 for i in ext_file:
@@ -37,6 +39,7 @@ for i in ext_file:
 # move files to each folder
 for each in list_dir:
     temp = each.split(".")
+    print(temp)
     # if file is create while program run or 
     # create not folder to file name skip it 
     if temp[1] not in ext_file:
