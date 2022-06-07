@@ -1,8 +1,10 @@
 import os
 
-
 # get all list of correct directory
 list_dir = os.listdir(".")
+list_dir =[each.upper() for each in list_dir]
+if len(list_dir) == 1:
+    print("This folder looks like Empty")
 
 ext_file = []
 folder_name = []
@@ -13,14 +15,14 @@ for i in list_dir:
     # check is file or dir
     if os.path.isfile(i):
         # if equal to script name skip
-        if i == 'Main.py' or i == "File Magager.exe":
+        if i == 'Main.py' or i == "File-Manager.exe":
             continue
         # # split file name to catch extension name
-        false_temp , temp = i.split('.')
+        temp = i.split('.')
         # append extension of file to ext_file list
-        ext_file.append(temp)
+        ext_file.append(temp[-1])
         # set folder status to 0
-        created_folder[temp] = 0
+        created_folder[temp[-1]] = 0
     else:
         list_dir.remove(i)
 
@@ -40,6 +42,6 @@ for each in list_dir:
     temp = each.split(".")
     # if file is create while program run or 
     # create not folder to file name skip it 
-    if temp[1] not in ext_file:
+    if temp[-1] not in ext_file:
         continue
-    os.rename(each,f"./{temp[1]}_files/{each}")
+    os.rename(each,f"./{temp[-1]}_files/{each}")
