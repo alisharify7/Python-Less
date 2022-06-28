@@ -37,7 +37,7 @@ ___
 
 ___
 
-> 7.<a href='./Roll-Dice-Game' > Python (Loc) line Couner </a>
+> 7.<a href='https://github.com/alisharifyy/Python-Less/tree/main/Python-Line-Counter' > Python (Loc) line Couner </a>
   >> a file to count all yout line of code in python files(this program ignore whitspace and comments)
 
 ___
