@@ -14,7 +14,7 @@
   >> Purpose of this app is Guessed Your Number In Less Step it can
 ___
 > 2.<a href="./File_Manager"> File-Manager </a> 
-  >> bruh bruh bru
+  >> A python File manager to manage your file
   
 ___
 > 3.<a href="./Rock-paper-Scissors"> Rock Paper Scissors </a>
@@ -34,5 +34,10 @@ ___
 
 > 6.<a href='./Roll-Dice-Game' > Mystery Roll Dice Game</a>
   >> a Mystery Roll-Dice-Game Game With Different Rule To play
+
+___
+
+> 7.<a href='./Roll-Dice-Game' > Python (Loc) line Couner </a>
+  >> a file to count all yout line of code in python files(this program ignore whitspace and comments)
 
 ___
