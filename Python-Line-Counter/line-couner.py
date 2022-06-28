@@ -1,4 +1,3 @@
-
 def main():
     print("LOC Python")
     file_name = input("Enter Python file Name: ")
@@ -23,7 +22,6 @@ def check_file_ex_py(file):
 
 
 def normalize_content(file):
-
     counter = 0
     for each in file:
         if each.strip() == "":
@@ -37,3 +35,4 @@ def normalize_content(file):
 
 if __name__ == "__main__":
     main()
+    
