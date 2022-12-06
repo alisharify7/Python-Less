@@ -12,11 +12,9 @@ A simple App For Manage Files
 
 
 # How Work's:
-this app is for manage files in your Pc - imagine you have lot's of file in the a directory
+this app is for manage files in your Pc - imagine you have lot's of file in a directory
 this app manage all files For you immediately 
-
-## Then ...
-app create Folder For each File(Extension of each file) and move Same extension Files to their Folder
+app create Folder For each File(Extension of each file) and move each file to their extension Folder 
 
 <br>
 
