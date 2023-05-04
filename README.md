@@ -1,3 +1,8 @@
+<p>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/alisharify7/Python-Less">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alisharify7/Python-Less">
+</p>
+
 - How clone repository:
 
         Git clone https://github.com/alisharifyy/Python-Less.git
