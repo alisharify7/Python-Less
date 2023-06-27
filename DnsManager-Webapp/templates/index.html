@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid" dir="rtl">
+
+        <div class="fixed-top bg-dark d-flex justify-content-center align-items-center">
+            <p class="text-white m-0">Current DNS IP: {{CURRENT_DNS}}</p>
+        </div>
+
+
+
+        <div class="row my-5 justify-content-center">
+
+            <div class="col-lg-8 col-md-6 col-12 h-100">
+                <div class="row h-100 justify-content-center">
+                    <div class="col-10">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                <label for="">
+                                جستجوی همه  
+                                    <input type="radio" id="searchALL" >
+                                </label>
+                                <div>
+                                    <button class="btn btn-success" id="add-search">+</button>
+                                    <button class="btn btn-danger" id="clear">x</button>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 my-2" dir="ltr">
+                                <div class="input-group mb-3">
+                                    <button onclick="showFrame(this);" class="input-group-text bg-success seach-me" id="basic-addon1">جستجو</button>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div style="max-height: 540px;height:1px">
+                                    <iframe src="" style="width: 100%;" class="" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="search-container">
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="text-center overflow-auto" style="max-height: 640px" >
+                        <h4>انتخاب DNS با توجه به موقعیت</h4>
+                        <p> total: {{DNS_SERVERS_len}}</p>
+                        {% for ip in DNS_SERVERS %}
+                            {% if ip.ip == CURRENT_DNS %}
+                            <a href="{{url_for('setDNS', ip=ip.ip)}}" class="py-2 bg-success m-0 my-1 rounded text-white w-100 d-flex justify-content-center align-items-center"> {{ip.ip}} - {{ip.ct}} </a>
+                            {% else %}
+                            <a href="{{url_for('setDNS', ip=ip.ip)}}" class="py-2 bg-dark m-0 my-1 rounded text-white w-100 d-flex justify-content-center align-items-center"> {{ip.ip}} - {{ip.ct}} </a>
+                            {% endif %}
+                        {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    {# alert for flashing messages to user #}
+
+{% with messages = get_flashed_messages(True) %}
+{% if messages %}
+{% for category, message in messages  %}
+<div class="alert p-3 m-2 alert-dismissible show fade alert-{{category}} d-flex flex-column position-fixed top-0 end-0 m-3"
+ style="max-width:300px !important ;z-index: 2000;">
+    <div class="alert-heading d-flex justify-content-between align-items-center">
+
+        <a role="button" class="btn btn-close" data-bs-dismiss="alert"></a>
+        {% if category == "success" %}
+        <p class="me-5">عملیات با موفقیت انجام شد</p>
+        {% endif %}
+
+        {% if category == "info" %}
+        <p class="me-5">توجه</p>
+        {% endif %}
+
+        {% if category == "danger" %}
+        <p class="me-5">خطایی رخ داد</p>
+        {% endif %}
+
+        {% if category == "warning" %}
+        <p class="me-5">هشدار توجه کنید</p>
+        {% endif %}
+
+    </div>
+    <hr class="m-0 p-0">
+    <div class="alert-body text-end overflow-auto p-2 text-center" style="max-height: 120px !important;">
+        <p class="text-break m-0">{{message}}</p>
+    </div>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+    <script>
+        let boxContianer=document.querySelector(".search-container");
+        let BtnClear=document.querySelector("#clear");
+        let searchALL=document.querySelector("#searchALL");
+        searchALL.addEventListener("click", e=>{
+            let all=document.querySelectorAll(".seach-me")
+            all.forEach(e=>{
+                e.click()
+            })
+        })
+        BtnClear.addEventListener("click", (e)=>{
+            boxContianer.innerHTML = "";
+
+        })
+        let addBTN=document.querySelector("#add-search");
+        addBTN.addEventListener("click", e=>{
+            let temp = `
+            <div class="col-12 my-2" dir="ltr">
+                    <div class="input-group mb-3">
+                        <button  onclick="showFrame(this);" class="input-group-text bg-success seach-me" id="basic-addon1">جستجو</button>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div style="height:1px">
+                        <iframe src="" class="w-100 h-100" frameborder="0"></iframe>
+                    </div>
+                          
+                </div>
+            `
+            boxContianer.innerHTML += temp;
+        })
+
+        function showFrame(th){
+            let input = th.nextElementSibling 
+            console.log(input)
+            let div = th.parentElement.parentElement.children[1]
+            div.style.height ="540px";
+            div.style.width ="100%";
+            div.children[0].src= "https://bing.com/?q="+input.value
+            div.children[0].height ="100%";
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
